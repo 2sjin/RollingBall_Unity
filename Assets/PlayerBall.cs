@@ -7,6 +7,9 @@ public class PlayerBall : MonoBehaviour {
     bool isJump;
     Rigidbody rigid;
 
+    // 획득한 아이템 수
+    public int itemCount;
+
     void Start() {
         isJump = false;
         rigid = GetComponent<Rigidbody>();
