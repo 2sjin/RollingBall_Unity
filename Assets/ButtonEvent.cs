@@ -5,6 +5,6 @@ using UnityEngine.SceneManagement;
 
 public class ButtonEvent : MonoBehaviour {
     public void startGame() {
-        SceneManager.LoadScene("SampleScene");
+        SceneManager.LoadScene("Stage0");
     }
 }
