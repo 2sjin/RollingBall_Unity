@@ -4,8 +4,10 @@ using UnityEngine;
 
 public class ItemCapsule : MonoBehaviour {
     public float rotateSpeed;
+    public ItemCountUI ui;
 
     void Update() {
+        ui = new ItemCountUI();
         // 아이템 회전 효과(월드 좌표계 기준)
         transform.Rotate(Vector3.up * rotateSpeed * Time.deltaTime, Space.World);
     }
